@@ -22,7 +22,9 @@ ggplot(data = ucsb_grad,
            y = domestic_enrollment)) +
   geom_col(aes(fill = ethnicity),
            position = "fill") +
-  labs(x = "\nErollment Year",
-       y = "Proportion of Enrollment\n")
+  labs(x = "\nEnrollment Year",
+       y = "Proportion of Enrollment",
+       title = "UCSB Domestic Graduate Enrollment Proportions by Ethnicity\n") +
+  theme_minimal()
 ```
 
